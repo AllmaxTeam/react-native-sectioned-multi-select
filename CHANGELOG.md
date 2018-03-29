@@ -1,4 +1,32 @@
 # Changelog
+
+## 0.4.2 - 2018-03-29
+### Fixed / Added
+    - disabled items
+        - sub item Touchable wasn't being disabled when a truthy disabled key is present
+        - make item text colors.disabled when item has truthy disabled key
+
+## 0.4.1 - 2018-03-26
+### Fixed
+    - cancel / confirm buttons not displaying properly on iOS. Cancel takes a fixed width instead of a flex ratio now. #19
+
+## 0.4.0 - 2018-03-23
+### Added
+    - Cancel button #15
+        - shows on the modal to the leftof the confirm button. Pressing it dismisses the modal AND removes all selected items.
+        - show with `showCancelButton` prop.
+        - `cancelButton` style and `cancelIconComponent` are available. (It is a 'close' icon by default, but you could make it a text component if you want).
+    - Hide select #16
+        - hide the select entirely with `hideSelect` prop.
+    - Display key #14
+        - customize the title key with `displayKey` prop, instaed of being forced to use 'name'.
+    - Added `headerComponent` prop  - goes above search bar #17
+    - Added `onCancel` and `onConfirm` function props
+
+### Changed
+    - `SelectedText` now allowed to be a function, for more complex translations/
+ 
+        
 ## 0.3.5 - 2018-03-08
 ### Added
     - customizable `selectedText` string (defaults to 'selected'). #13
